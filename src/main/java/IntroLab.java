@@ -9,8 +9,7 @@ public class IntroLab {
 
     /**
      * Returns a message depending on the given greeting, name, message, and
-     * whether the caller likes cats or dogs more.
-     *
+     * whether the caller likes cats or dogs more.*
      * Do NOT change this method!
      *
      * @param greeting   A string with a greeting (e.g. "Hello", "Hey")
@@ -18,7 +17,7 @@ public class IntroLab {
      * @param likes_cats A boolean: true if they like cats more than dogs,
      *                   false otherwise.
      * @param message    A message to be printed out.
-     * @return A message using the given parameters.
+     * @return A message using the givendsfsd
      */
     public static String printLabMessage(String greeting, String name,
                                   boolean likes_cats, String message) {
@@ -33,17 +32,19 @@ public class IntroLab {
         return message_to_print + message;
     }
 
-    /* TODO: In the space below, write your our method.
-     *       The method should be named with your utorID and should call
-     *       printLabMessage with some parameters.
+    /*
      *
      * As a reference, we've provided the sample method exampleStudent.
      * Make sure you document your method properly!
      */
-
+    public static String fuyuhan6() {
+        return printLabMessage("Hello", "Yuhan Fu", true,
+                "nice to meet you!");
+    }
     /**
      * An example method that calls on printLabMessage.
      */
+
     public static String exampleStudent() {
         return printLabMessage("Hello", "Stu Dent", true,
                 "Welcome to CSC207!");
@@ -52,9 +53,11 @@ public class IntroLab {
 
     public static void main(final String[] args) {
         System.out.println(exampleStudent());
+        String a= fuyuhan6();
+        System.out.println(a);
 
-        /* TODO: Add a call to the method you wrote in this main method,
-         *        and print the results of it.
+
+        /*
          *
          * As a reference, we've provided a sample call to exampleStudent
          * above. Afterwards: run this file to see the output!

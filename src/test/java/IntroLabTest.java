@@ -1,8 +1,8 @@
 /*
  * This file contains JUnit test cases for IntroLab.java
  *
- * Complete the TODO in this file!
  */
+
 
 import org.junit.*;
 
@@ -17,7 +17,7 @@ public class IntroLabTest {
     public void tearDown() {
     }
 
-    @Test(timeout = 10)
+    @Test(timeout = 1000)
     public void testExampleStudent() {
         String expected = "Hello! My name is Stu Dent! " +
                 "I like cats more than dogs! Welcome to CSC207!";
@@ -25,9 +25,13 @@ public class IntroLabTest {
         assertEquals(expected, actual);
     }
 
-    /* TODO: Write a test case for the method you wrote in IntroLab.
-     *       If done properly, you should be able to run IntroLabTest and see
-     *       the test results.
+    /*
      * As a reference, we've included testExampleStudent above.
      */
+    @Test(timeout = 1000)
+    public void testFuyuhan6() {
+        String expected = "Hello! My name is Yuhan Fu! I like cats more than dogs! nice to meet you!";
+        String actual = IntroLab.fuyuhan6();
+        assertEquals(expected, actual);
+    }
 }
